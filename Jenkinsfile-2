@@ -26,3 +26,17 @@ pipeline{
    
    }
 }
+post {
+  always {
+    // One or more steps need to be included within each condition's block.
+    echo 'always run this build'
+  }
+  success {
+    // One or more steps need to be included within each condition's block.
+    echo 'this build is successful'
+  }
+  failure {
+    // One or more steps need to be included within each condition's block.
+    echo 'this build has failed'
+  }
+}
