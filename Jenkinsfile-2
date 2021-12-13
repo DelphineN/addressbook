@@ -20,7 +20,7 @@ pipeline{
     stage('Deployment') {
       steps {
     // One or more steps need to be included within the steps block.
-    deploy adapters: [tomcat9(credentialsId: 'addressbookdeployer_user', path: '', url: 'http://3.92.227.242:8070/')], contextPath: null, war: '**/*.war'
+    deploy adapters: [tomcat9(credentialsId: 'gcptomcatdeployer_user', path: '', url: 'http://34.73.107.88:8080/')], contextPath: null, war: '**/*.war'
         }
     }
    
